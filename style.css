@@ -1,0 +1,720 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+  z-index: 1;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+
+  }
+  .nav p {
+    padding-right: 6%;
+    cursor: pointer;
+  }
+  .nav p a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #BF7506;
+
+  }
+  .par1{
+    width: 50%;
+    margin-left: 10%;
+  }
+  .par1 h2{
+    font-size: 30px;
+  }
+  .par1 span{
+    color: #BF7506;
+  
+  }
+  .par1 p{
+    font-size: 20px;
+  }
+.img svg{
+  width: 78%;
+  height: 78%;
+}  
+
+.icon{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* justify-content: space-between; */
+}
+.icons .bxl-linkedin{
+  color: #376DCF;
+  margin-left: 6%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons .bxl-twitter{
+  color: #55ACEE;
+  margin-left: 6%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons .bxl-github{
+  color: #0f0f0f;
+  margin-left: 6%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons .bxl-stack-overflow{
+  color: #BF7506;
+  margin-left: 6%;
+  font-size: 20px;
+  cursor: pointer;
+  /* margin-right: 30%; */
+}
+.container{
+  display: flex;
+}
+.par1{
+margin-top: 10%;
+}
+.cv button span{
+  color: #333333;
+}
+.cv button {
+  border: none;
+  border-bottom:2px solid #BF7506;
+  padding: 6px;
+  background-color: transparent;
+cursor: pointer;
+font-weight: bolder;
+font-size: 15px;
+}
+/* projects */
+.projects h2{
+  font-size: 35px;
+  margin-top: 20px;
+  color: #BF7506;
+}
+.container2{
+display: flex;
+/* flex-wrap: wrap; */
+}
+h3{
+  color: #BF7506;
+}
+.buttons button{
+  background: transparent;
+  border: 1px solid #BF7506;
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 6px;
+}
+.image1 p{
+font-size: 17px;
+width: 86%;
+}
+.image1 img{
+width: 90%;
+height: 59%;
+}
+.codes button{
+  border: none;
+  border-bottom: 2px solid #BF7506 ;
+  background: transparent;
+margin-right: 3%;
+}
+.buttons button{
+  background: transparent;
+  border: 1px solid #BF7506;
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 6px;
+}
+.image2 p{
+  font-size: 17px;
+  width: 78%;
+}
+.image2 img{
+  width: 80%;
+  height: 59%;
+  }
+
+  /* about me */
+
+  .about_me{
+    display: flex;
+/* flex-wrap: wrap; */
+    margin-top: 10%;
+margin-left: 20%;
+}
+  .about_me img{
+width: 25%;
+/* height: 100%; */
+border-radius: 17px;
+margin-right: 10%;
+
+  }
+.about h4{
+font-size: 24px;
+  }
+  .about h2{
+    color: #BF7506;
+    font-size: 32px;
+      }
+.about p{
+  font-size: 16px;
+  width: 57%;
+}
+.about span p{
+  color: #BF7506;
+  font-size: 24px;
+}
+
+/* skills */
+.skills{
+  margin-left: 21%;
+}
+.skills h4{
+  font-size: 24px;
+}
+.experience button{
+background: transparent;
+border: 1px solid #BF7506;
+border-radius: 3px;
+margin-right: 7px;
+padding: 3px 6px;
+}
+
+/* blogs */
+.blogs h2{
+  font-weight: bold;
+  font-size: 35px;
+  color: #BF7506;
+  margin-left: 20%;
+  margin-top: 6%;
+}
+.blog2{
+  box-shadow: 10px 10px rgba(0, 0, 0,0.2);
+  width: 74%;
+height: 55%;
+cursor: pointer;
+}
+.blog2 h4 a {
+  color: black;
+  text-decoration: none;
+  margin-left: 30%;
+}
+.blog2 .feedback{
+margin-left: 30%;
+}
+.blog2 img{
+  width: 100%;
+  /* height: 15%; */
+}
+
+.blog3{
+  box-shadow: 10px 10px rgba(0, 0, 0,0.2);
+  width: 74%;
+height: 55%;
+cursor: pointer;
+}
+.blog3 h4 a{
+  color: #0f0f0f;
+  text-decoration: none;
+  margin-left: 30%;
+}
+.blog3 .feedback{
+margin-left: 30%;
+}
+.blog3 img{
+  width: 100%;
+  height: 60%;
+}
+
+.blog4{
+  box-shadow: 10px 10px rgba(0, 0, 0,0.2);
+  width: 74%;
+height: 55%;
+cursor: pointer;
+}
+.blog4 h4 a{
+  margin-left: 30%;
+  text-decoration: none;
+  color: #0f0f0f;
+}
+.blog4 .feedback{
+margin-left: 30%;
+}
+.blog4 img{
+  width: 100%;
+  /* height: 15%; */
+}
+
+.blogs_list{
+  display: grid;
+grid-template-columns: repeat(3,0.4fr);
+margin-left: 18%;
+}
+ .feedback{
+  display: flex;
+  justify-content: center;
+  margin-right: 40%;
+  margin-top: -5%;
+}
+.feedback i{
+  margin-top: 10px;
+  font-size: 30px;
+  color: #545454;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+/* contact */
+.contact h4{
+  font-size: 32px;
+  margin-left: 0%;
+}
+.contact{
+  margin-left: 30%;
+  margin-top: -10%;
+}
+.contact input{
+  width: 32%;
+padding:12px 32px ;   
+background: transparent;
+  border-radius: 6px;
+  border: 2px solid #c7c7c7;
+  margin: 10px 10px 10px 0;
+}
+.contact textarea{
+  width: 40%;
+  padding:12px 42px ;   
+  background: transparent;
+  border-radius: 6px;
+  border: 2px solid #c7c7c7;
+  margin: 10px 10px 10px 0;
+}
+.contact button{
+  border: none;
+  border-bottom: 2px solid #BF7506;
+background: transparent;
+cursor: pointer;
+margin: 10px ;
+margin-left: 32%;
+}
+
+
+
+/* responsiveness */
+@media screen and (min-width:320px) and (max-width:499px) {
+  .par1 h2{
+    font-size: 24px;
+  }
+  .par1 p{
+    font-size: 18px;
+    /* width: 100%; */
+  }
+  .icon{
+    width: 100%;
+  }
+  .nav p{
+font-size: 15px;
+  }
+  .img{
+    display: none;
+  }
+  .cv button{
+    font-size: 14px;
+   }
+  .container2{
+    /* display: flex; */
+    flex-wrap: wrap;
+    }
+    .about_me{
+      flex-wrap: wrap;
+      margin-top: 20%;
+      margin-left: 6%;
+     }
+     .about_me img{
+      width: 70%;
+      height: 360px;
+     }
+     .about h4{
+      font-size: 18px;  
+       }
+       .about h2{
+        font-size: 22px;  
+         }
+         .about span p{
+          font-size: 18px;  
+           }
+         .about p{
+          font-size: 15px;  
+          width: 90%;
+         } 
+         .skills{
+          margin-left:6%;
+         }
+         .skills h4{
+          font-size: 20px;
+         }
+         .blogs h2{
+          font-size: 30px;
+          margin-left: 10%;
+         }
+         
+      .feedback i{
+        font-size: 17px;
+      }
+      .feedback p{
+        margin-top: 10px;
+      }
+      .blogs_list{
+        margin-left: 10px;
+      }
+         .blog2{
+          width: 200px;
+        height: 220px;
+        margin-bottom: 20px;
+        }
+      
+         /* .blog2 h4{
+          margin-left: 10%;
+        } */
+        .blog3{
+          width: 200px;
+        height: 220px;
+        margin-bottom: 20px;
+        }
+        .blog3 img{
+          height: 54%;
+        }
+        /* .blog3 h4{
+          margin-left: 10%;
+        } */
+        .blog4{
+          width: 200px;
+        height: 220px;
+        margin-bottom: 20px;
+        }
+        /* .blog4 h4{
+          margin-left: 10%;
+        } */
+        .contact{
+          margin-left: 50px;
+        }
+        .contact h4{
+          font-size: 24px;
+        }
+        .contact input{
+          width: 55%;
+        }
+        .contact textarea{
+          width: 60%;
+        }
+        .contact button{
+          margin-left: 63%;
+        }
+    .blogs_list{
+      display: grid;
+    grid-template-columns: repeat(1,0.4fr);
+    margin-left: 18%;
+    }
+
+}
+@media screen and (min-width:500px)  and (max-width:599px){
+  .img{
+    display: none;
+  }
+  .par1{
+margin-left: 20%; 
+ }
+ .par1 h2{
+  font-size: 24px;
+ }
+ .par1 p{
+  font-size: 18px;
+ }
+ .cv button{
+  font-size: 14px;
+ }
+ .projects{
+  margin-left: 10%;
+ }
+ .projects h2{
+  font-size: 30px;
+ }
+ .image1 h3{
+  font-size: 14px;
+ }
+ .buttons button{
+  font-size: 12px;
+ }
+ .image1 p{
+  font-size: 14px;
+ }
+ .image2 h3{
+  font-size: 14px;
+ }
+ .image2 p{
+  font-size: 14px;
+ }
+ .about_me{
+  margin-top: 20%;
+  margin-left: 6%;
+ }
+ .about_me img{
+  width: 40%;
+  height: 360px;
+ }
+ .about h4{
+  font-size: 18px;  
+   }
+   .about h2{
+    font-size: 22px;  
+     }
+     .about span p{
+      font-size: 18px;  
+       }
+     .about p{
+      font-size: 15px;  
+      width: 90%;
+     } 
+     .skills{
+      margin-left:6%;
+     }
+     .skills h4{
+      font-size: 20px;
+     }
+     .blogs h2{
+      font-size: 30px;
+      margin-left: 10%;
+     }
+     
+  .feedback i{
+    font-size: 17px;
+  }
+  .feedback p{
+    margin-top: 10px;
+  }
+  .blogs_list{
+    margin-left: 10px;
+  }
+     .blog2{
+      width: 85%;
+    height: 60%;
+    }
+  
+     .blog2 h4{
+      margin-left: 20%;
+    }
+    .blog3{
+      width: 85%;
+    height: 60%;
+    }
+    .blog3 img{
+      height: 54%;
+    }
+    .blog3 h4{
+      margin-left: 10%;
+    }
+    .blog4{
+      width: 85%;
+    height: 60%;
+    }
+    .blog4 h4{
+      margin-left: 10%;
+    }
+    .contact{
+      margin-left: 50px;
+    }
+    .contact h4{
+      font-size: 24px;
+    }
+    .contact input{
+      width: 55%;
+    }
+    .contact textarea{
+      width: 60%;
+    }
+    .contact button{
+      margin-left: 63%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:699px) {
+  .img{
+    display: none;
+  }
+  .par1{
+margin-left: 20%; 
+ }
+ .projects{
+  margin-left: 10%;
+ }
+ .about_me{
+  margin-top: 20%;
+  margin-left: 6%;
+ }
+ .about_me img{
+  width: 40%;
+  height: 360px;
+ }
+ .about h4{
+  font-size: 20px;  
+   }
+   .about h2{
+    font-size: 26px;  
+     }
+     .about span p{
+      font-size: 20px;  
+       }
+     .about p{
+      font-size: 15px;  
+      width: 90%;
+     } 
+     .skills{
+      margin-left:6%;
+     }
+  .feedback i{
+    font-size: 20px;
+  }
+  .feedback p{
+    margin-top: 10px;
+  }
+  .blogs_list{
+    margin-left: 10px;
+  }
+     .blog2{
+      width: 85%;
+    height: 60%;
+    }
+  
+     .blog2 h4{
+      margin-left: 20%;
+    }
+    .blog3{
+      width: 85%;
+    height: 60%;
+    }
+    .blog3 img{
+      height: 54%;
+    }
+    .blog3 h4{
+      margin-left: 20%;
+    }
+    .blog4{
+      width: 85%;
+    height: 60%;
+    }
+    .blog4 h4{
+      margin-left: 20%;
+    }
+    .contact{
+      margin-left: 50px;
+    }
+    .contact input{
+      width: 55%;
+    }
+    .contact textarea{
+      width: 60%;
+    }
+    .contact button{
+      margin-left: 63%;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:813px) {
+  .about_me{
+    margin-left: 16%;
+   }
+  .about_me img{
+    width: 40%;
+    height: 350px;
+   }
+   .about h4{
+font-size: 20px;  
+ }
+ .about h2{
+  font-size: 26px;  
+   }
+   .about span p{
+    font-size: 20px;  
+     }
+   .about p{
+    font-size: 15px;  
+    width: 90%;
+   } 
+.feedback i{
+  font-size: 20px;
+}
+.feedback p{
+  margin-top: 10px;
+}
+   .blog2{
+    width: 85%;
+  height: 60%;
+  }
+
+   .blog2 h4{
+    margin-left: 20%;
+  }
+  .blog3{
+    width: 85%;
+  height: 60%;
+  }
+  .blog3 img{
+    height: 54%;
+  }
+  .blog3 h4{
+    margin-left: 20%;
+  }
+  .blog4{
+    width: 85%;
+  height: 60%;
+  }
+  .blog4 h4{
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width:820px) and (max-width:1240px) {
+ 
+ .image1 img{
+height: 60%;
+ }
+ .about_me{
+  margin-left: 17%;
+ }
+ .about_me img{
+  width: 40%;
+  height: 390px;
+ }
+ 
+ .about p{
+  width: 90%;
+ }
+ .blog2{
+  width: 85%;
+height: 60%;
+}
+.blog2 h4{
+  margin-left: 20%;
+}
+
+.blog3{
+  width: 85%;
+height: 60%;
+}
+.blog3 h4{
+  margin-left: 20%;
+}
+.blog4{
+  width: 85%;
+height: 60%;
+}
+.blog4 h4{
+  margin-left: 20%;
+}
+
+}

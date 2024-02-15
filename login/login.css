@@ -1,0 +1,58 @@
+.image{
+    display: flex;
+    position: relative;
+}
+.image img{
+    width: 50%;
+    height: 97vh;
+}
+.image .image_overlay img{
+    width: 100%;
+    height: 97vh;
+}
+.overlay{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 65%;
+    height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+}
+.overlay-content{
+    display: block;
+    position: absolute;
+    top: 16%;
+    left: 24%;
+    z-index: 1;
+}
+.overlay-content h2{
+    font-size: 35px;
+    margin-left: 30%;
+    margin-bottom: 20%;
+}
+.overlay-content input{
+    padding: 10px 35px;
+    margin-bottom: 15%;
+    width: 80%;
+background: transparent;
+border: 2px solid #BF7506;
+border-radius: 10px;
+}
+.overlay-content button{
+    margin-top: 10%;
+    margin-left: 28%;
+    background: #BF7506;
+    padding: 10px 20%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.overlay-content p{
+font-size: 20px;
+margin-left: 80px;
+}
+.overlay-content p span a{
+    text-decoration: none;
+    color: #BF7506;
+    cursor: pointer;
+}

@@ -1,0 +1,207 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+  z-index: 1;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+  }
+  .nav p {
+    padding-right: 6%;
+    cursor: pointer;
+  }
+  .nav p a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #BF7506;
+  }
+  .nav p {
+    color: #BF7506;
+
+  }
+  
+  .blog1_bg h2 span {
+    color: #BF7506;
+  }
+  
+  .blog1_bg h2 {
+    margin-top: 8%;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  
+  .part1 p {
+    margin-top: 4%;
+    margin-left: 4px;
+    width: 47%;
+    float: right;
+  }
+  
+  .part1 img {
+    width: 38%;
+    height: 7.8%;
+    margin-left: 10%;
+    box-shadow: 10px 10px rgb(0, 0, 0, 0.2);
+  }
+  
+  .par p {
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 9%;
+  }
+  
+  .comments {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(0, 0, 0, 0.2);
+    width: 16%;
+    margin-bottom: 2%;
+    height: 8%;
+    margin: 2% 9%;
+  }
+  
+  .comments i {
+    font-size: 30px;
+    margin-top: 16px;
+    margin: 16px 10px 0 10px;
+  }
+  
+  .feedback {
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+  
+  .feedback1 input{
+    width: 30%;
+    padding: 12px;
+    background: transparent;
+    border-radius: 6px;
+    border: 2px solid #BF7506;
+    margin: 10px;
+  }
+  
+  .feedback2 textarea {
+    width: 35%;
+    padding: 12px;
+    background: transparent;
+    border-radius: 6px;
+    border: 2px solid #BF7506;
+    margin: 10px;
+  }
+  
+  .feedback button {
+    border: none;
+    border-bottom: 2px solid #BF7506;
+    background: transparent;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 28%;
+  }
+  
+
+  /* responsiveness */
+  @media screen and (min-width:300px) and (max-width:499px) {
+    .blog1_bg h2{
+        font-size: 23px;
+    }
+    .part1 img{
+        width: 60%;
+    }
+    .part1 p {
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 77%;
+    float: none;
+  }
+  .comments {
+    width: 210px;
+    margin-bottom: 2%;
+    height: 80px;
+    margin: 2% 9%;
+  } 
+  .user p{
+    margin-top:-10px;
+  }
+  .feedback input{
+    width: 42%;
+  }
+  .feedback textarea{
+    width: 50%;
+  }
+  .feedback button{
+    margin-left: 40%;
+  }
+  }
+  @media screen and (min-width:500px) and (max-width:659px) {
+    .part1 img{
+        width: 50%;
+    }
+    .part1 p {
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 77%;
+    float: none;
+  }
+  .comments {
+    width: 210px;
+    margin-bottom: 2%;
+    height: 80px;
+    margin: 2% 9%;
+  } 
+  .user p{
+    margin-top:-10px;
+  }
+  .feedback input{
+    width: 42%;
+  }
+  .feedback textarea{
+    width: 50%;
+  }
+  .feedback button{
+    margin-left: 40%;
+  }
+  }
+  @media screen and (min-width:660px) and (max-width:900px) {
+
+    .part1 p{
+        font-size: 14px;
+    }
+    .par p{
+        font-size: 14px;
+    }
+    .comments {
+        width: 210px;
+        margin-bottom: 2%;
+        height: 80px;
+        margin: 2% 9%;
+      } 
+      .user p{
+        margin-top:-10px;
+      }
+      .feedback input{
+        width: 42%;
+      }
+      .feedback textarea{
+        width: 50%;
+      }
+      .feedback button{
+        margin-left: 40%;
+      }
+  }
+  @media screen and (min-width:900px) and (max-width:1107px) {
+    .comments {
+        width: 210px;
+        margin-bottom: 2%;
+        height: 80px;
+        margin: 2% 9%;
+      } 
+      .user p{
+        margin-top:-10px;
+      }
+  }
