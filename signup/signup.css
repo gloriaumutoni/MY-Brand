@@ -1,14 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(221, 220, 220, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+  z-index: 1;
+  height: 8%;
+}
+.sidebar{
+position: fixed;
+z-index: 999;
+top: 0;
+right: 0;
+height: 30%;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.322);
+display: none;
+flex-direction: column;
+align-items: center;
+box-shadow: -10px 0 10px rgba(0, 0, 0,0.2) ;
+}
+
+.navv p {
+  width: 100%;
+  cursor: pointer;
+}
+.navv p i {
+ display: flex;
+ justify-content: flex-end;
+}
+.navv p a{
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #BF7506;
+
+}
+.hide{
+  display: flex;
+}
+.hideOnMobile{
+  display: flex;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+padding-top: 1.2%; 
+ }
+  .nav p {
+    padding-right: 6%;
+    cursor: pointer;
+  }
+  .nav p a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #BF7506;
+
+  }
 .image{
     display: flex;
     position: relative;
 }
 .image img{
     width: 50%;
-    height: 97vh;
+    height: 100vh;
 }
 .image .image_overlay img{
     width: 100%;
-    height: 97vh;
+    height: 99vh;
+}
+.hide{
+  display: flex;
+}
+.hideOnMobile{
+  display: flex;
 }
 .overlay{
     top: 0;
@@ -32,7 +105,7 @@
 }
 .overlay-content input{
     padding: 10px 35px;
-    width: 96%;
+    width:300px;
         margin-bottom: 15%;
 background: transparent;
 border: 2px solid #BF7506;
@@ -40,10 +113,170 @@ border-radius: 10px;
 }
 .overlay-content button{
     margin-top: 10%;
-    margin-left: 42%;
+    margin-left: 28%;
     background: #BF7506;
     padding: 10px 20%;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+/* responsiveness */
+@media screen and (min-width:200px) and (max-width:299px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .hide{
+    display: flex;
+  }
+  .image img{
+    width: 100%;
+  }
+  .overlay{
+width: 100%;
+  }
+  .overlay-content{
+    left: 10%;
+  }
+  .overlay-content h2{
+    margin-left: 26%;
+    font-size: 27px;
+  }
+
+  .overlay-content input{
+    padding: 6px 16px;
+    width: 96%;
+}
+.overlay-content button{
+    padding: 10px 10%;
+    font-size: 13px;
+    margin-left: 30%;
+}
+.overlay-content p{
+font-size: 17px;
+}
+}
+@media screen and (min-width:300px) and (max-width:359px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .hide{
+    display: flex;
+  }
+  .image img{
+    width: 100%;
+  }
+  .overlay{
+width: 100%;
+  }
+  .overlay-content{
+    left: 18%;
+  }
+  .overlay-content h2{
+    margin-left: 20%;
+  }
+
+  .overlay-content input{
+    padding: 6px 25px;
+    width: 98%;
+}
+.overlay-content button{
+    padding: 10px 10%;
+    font-size: 13px;
+    margin-left: 28%;
+}
+.overlay-content p{
+font-size: 17px;
+}
+}
+@media screen and (min-width:360px) and (max-width:419px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .hide{
+    display: flex;
+  }
+  .image img{
+    width: 100%;
+  }
+  .overlay{
+width: 100%;
+  }
+  .overlay-content{
+    left: 21%;
+  }
+  .overlay-content h2{
+    margin-left: 20%;
+  }
+
+  .overlay-content input{
+    padding: 6px 25px;
+    width: 98%;
+}
+.overlay-content button{
+    padding: 10px 10%;
+    font-size: 13px;
+    margin-left: 28%;
+}
+}
+@media screen and (min-width:420px) and (max-width:499px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .hide{
+    display: flex;
+  }
+  .image img{
+    width: 100%;
+  }
+  .overlay{
+width: 100%;
+  }
+  .overlay-content{
+    margin-left: 4%;
+  }
+  .overlay-content h2{
+    margin-left: 20%;
+  }
+
+  .overlay-content input{
+    padding: 6px 35px;
+    width: 98%;
+}
+.overlay-content button{
+    padding: 10px 10%;
+    font-size: 13px;
+    margin-left: 28%;
+}
+}
+@media screen and (min-width:500px) and (max-width:619px) {
+  .image img{
+    width: 100%;
+  }
+  .overlay{
+width: 100%;
+  }
+  .overlay-content{
+    left: 18%;
+  }
+  .overlay-content h2{
+    margin-left: 23%;
+  }
+}
+@media screen and (min-width:620px) and (max-width:699px) {
+  .image img{
+    width: 100%;
+  }
+  
+}
+@media screen and (min-width:700px) and (max-width:800px) {
+  .image img{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width:1517px) {
+  .hide{
+    display: none;
+  }
+  
 }

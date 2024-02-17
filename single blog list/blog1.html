@@ -12,15 +12,29 @@
 
         <!-- navbar -->
 
-        <div class="navbar">
+        <div class="sidebar">
+            <div class='navv'>
+              <p onClick="hideSidebar()"><i class='bx bx-x'></i></p>
+              <p ><a href="../index.html">Home</a></p>
+              <p ><a href="../index.html#section2">Portfolio</a></p>
+              <p ><a href="../index.html#section3">About me</a></p>
+              <p ><a href="../index.html#section4">Blog</a></p>
+              <p ><a href="../index.html#section5">Contact</a></p>
+              <p ><a href="../login/login.html">LogIn</a></p>
+            </div> 
+          </div>
+    
+          <div class="navbar">
             <div class='nav'>
-                <p><a href="../index.html">Home</a></p>
-                <p>Portfolio</p>
-                <p>About me</p>
-                <p>Blog</p>
-                <p><a href="../login/login.html">LogIn</a></p>
-              </div> 
-        </div>
+              <p class="hideOnMobile"><a href="../index.html">Home</a></p>
+              <p class="hideOnMobile"><a href="../index.html#section2">Portfolio</a></p>
+              <p class="hideOnMobile"><a href="../index.html#section3">About me</a></p>
+              <p class="hideOnMobile"><a href="../index.html#section4">Blog</a></p>
+              <p class="hideOnMobile"><a href="../index.html#section5">Contact</a></p>
+              <p class="hideOnMobile"><a href="../login/login.html">LogIn</a></p>
+             <p class="hide" onclick="showSidebar()"><i class='bx bx-menu'></i></p> 
+            </div> 
+          </div>
        
 
           <!-- body -->
@@ -70,5 +84,16 @@
         
         
     </div>
+
+    <script>
+        function showSidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display='flex';
+      }
+      function hideSidebar(){
+        const hideSidebar=document.querySelector('.sidebar');
+        hideSidebar.style.display='none';
+      }
+      </script>
 </body>
 </html>

@@ -9,17 +9,33 @@
 </head>
 <body>
     <div class="bg">
-      <div class="navbar">
-        <div class='nav'>
-          <p><a href="#section1">Home</a></p>
-          <p><a href="#section2">Portfolio</a></p>
-          <p><a href="#section3">About me</a></p>
-          <p><a href="#section4">Blog</a></p>
-          <p><a href="#section5">Contact</a></p>
-          <p><a href="./login/login.html">LogIn</a></p>
+      <!--  -->
+      <div class="sidebar">
+        <div class='navv'>
+          <p onClick="hideSidebar()"><i class='bx bx-x'></i></p>
+          <p ><a href="#section1">Home</a></p>
+          <p ><a href="#section2">Portfolio</a></p>
+          <p ><a href="#section3">About me</a></p>
+          <p ><a href="#section4">Blog</a></p>
+          <p ><a href="#section5">Contact</a></p>
+          <p ><a href="./login/login.html">LogIn</a></p>
         </div> 
       </div>
-       
+
+      <div class="navbar">
+        <div class='nav'>
+          <p class="hideOnMobile"><a href="#section1">Home</a></p>
+          <p class="hideOnMobile"><a href="#section2">Portfolio</a></p>
+          <p class="hideOnMobile"><a href="#section3">About me</a></p>
+          <p class="hideOnMobile"><a href="#section4">Blog</a></p>
+          <p class="hideOnMobile"><a href="#section5">Contact</a></p>
+          <p class="hideOnMobile"><a href="./login/login.html">LogIn</a></p>
+         <p class="hide" onclick="showSidebar()"><i class='bx bx-menu'></i></p> 
+        </div> 
+      </div>
+      
+
+
 <div class="container">
 
         <div class='img'>
@@ -147,7 +163,6 @@
     
     <h4><a href="./single blog list/blog1.html">UI/UX Design</a></h4>
   
-  
 <div class="feedback">
    <p>5</p>  
  <i class='bx bx-conversation'></i>    
@@ -213,5 +228,19 @@
 </div>
 
       </div>
+
+
+<script>
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display='flex';
+}
+function hideSidebar(){
+  const hideSidebar=document.querySelector('.sidebar');
+  hideSidebar.style.display='none';
+}
+</script>
+
+
 </body>
 </html>

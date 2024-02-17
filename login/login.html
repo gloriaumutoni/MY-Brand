@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="bg">
+
+      <div class="sidebar">
+        <div class='navv'>
+          <p onClick="hideSidebar()"><i class='bx bx-x'></i></p>
+          <p ><a href="../index.html">Home</a></p>
+          <p ><a href="../index.html#section2">Portfolio</a></p>
+          <p ><a href="../index.html#section3">About me</a></p>
+          <p ><a href="../index.html#section4">Blog</a></p>
+          <p ><a href="../index.html#section5">Contact</a></p>
+          <p ><a href="../signup/signup.html">SignUp</a></p>
+        </div> 
+      </div>
+  
+      <div class="navbar">
+        <div class='nav'>
+          <p class="hideOnMobile"><a href="../index.html">Home</a></p>
+          <p class="hideOnMobile"><a href="../index.html#section2">Portfolio</a></p>
+          <p class="hideOnMobile"><a href="../index.html#section3">About me</a></p>
+          <p class="hideOnMobile"><a href="../index.html#section4">Blog</a></p>
+          <p class="hideOnMobile"><a href="../index.html#section5">Contact</a></p>
+          <p class="hideOnMobile"><a href="../signup/signup.html">SignUp</a></p>
+         <p class="hide" onclick="showSidebar()"><i class='bx bx-menu'></i></p> 
+        </div> 
+      </div>
+          
         <div class="image">
+
             <div class="image_overlay">
+
                 <img src="../images/pexels-photo-731889.jpeg" alt="">
+
             <div class="overlay"></div>
+            
             <div class="overlay-content">
                 <h2>SignIn</h2>
     <input type="text" placeholder="email"><br>
@@ -19,9 +49,21 @@
     <button>SignIn</button>
     <p>Don't have an account?<span><a href="../signup/signup.html">SignUp</a></span></p>
        </div>
+       
             </div>
     <img src="../images/pexels-photo-731889.jpeg" alt="image">
         </div>
       </div> 
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display='flex';
+      }
+      function hideSidebar(){
+        const hideSidebar=document.querySelector('.sidebar');
+        hideSidebar.style.display='none';
+      }
+      </script>
+
 </body>
 </html>

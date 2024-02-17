@@ -1,3 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 .navbar{
   position: fixed;
   top: 0;
@@ -6,12 +13,51 @@
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
   z-index: 1;
+  height: 8%;
+}
+.sidebar{
+position: fixed;
+z-index: 999;
+top: 0;
+right: 0;
+height: 30%;
+width: 100%;
+background-color: rgba(255, 255, 255);
+display: none;
+flex-direction: column;
+align-items: center;
+padding-bottom: 10px;
+box-shadow: -10px 0 10px rgba(0, 0, 0,0.2) ;
+}
+
+.navv p {
+  width: 100%;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.navv p i {
+ display: flex;
+ justify-content: flex-end;
+}
+.navv p a{
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #BF7506;
+
+}
+.hide{
+  display: flex;
+}
+.hideOnMobile{
+  display: flex;
 }
 .nav{
     display: flex;
     justify-content: center;
-
-  }
+padding-top: 1.2%; 
+ }
   .nav p {
     padding-right: 6%;
     cursor: pointer;
@@ -22,6 +68,8 @@
     color: #BF7506;
 
   }
+
+
   .par1{
     width: 50%;
     margin-left: 10%;
@@ -44,8 +92,7 @@
 .icon{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  /* justify-content: space-between; */
-}
+margin-top: 10px;}
 .icons .bxl-linkedin{
   color: #376DCF;
   margin-left: 6%;
@@ -93,6 +140,7 @@ font-size: 15px;
 .projects h2{
   font-size: 35px;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: #BF7506;
 }
 .container2{
@@ -107,11 +155,16 @@ h3{
   border: 1px solid #BF7506;
   border-radius: 4px;
   padding: 4px;
-  margin-right: 6px;
+  margin: 12px 6px;
+}
+.image1 h3{
+  margin-left: 10px;
 }
 .image1 p{
 font-size: 17px;
-width: 86%;
+width: 84%;
+margin-left: 10px;
+margin-bottom: 10px;
 }
 .image1 img{
 width: 90%;
@@ -122,6 +175,7 @@ height: 59%;
   border-bottom: 2px solid #BF7506 ;
   background: transparent;
 margin-right: 3%;
+margin-left: 10px;
 }
 .buttons button{
   background: transparent;
@@ -130,9 +184,13 @@ margin-right: 3%;
   padding: 4px;
   margin-right: 6px;
 }
+.image2 h3{
+  margin-left: 10px;
+}
 .image2 p{
   font-size: 17px;
   width: 78%;
+  margin-left: 10px;
 }
 .image2 img{
   width: 80%;
@@ -143,27 +201,29 @@ margin-right: 3%;
 
   .about_me{
     display: flex;
-/* flex-wrap: wrap; */
-    margin-top: 10%;
+    /* margin-top: 10%; */
 margin-left: 20%;
 }
   .about_me img{
 width: 25%;
-/* height: 100%; */
 border-radius: 17px;
 margin-right: 10%;
 
   }
 .about h4{
 font-size: 24px;
+margin-top: 20px;
   }
   .about h2{
     color: #BF7506;
     font-size: 32px;
+    margin: 6px 0;
       }
 .about p{
-  font-size: 16px;
-  width: 57%;
+  font-size: 18px;
+  width: 67%;
+  margin: 6px 0;
+
 }
 .about span p{
   color: #BF7506;
@@ -175,6 +235,7 @@ font-size: 24px;
   margin-left: 21%;
 }
 .skills h4{
+  margin: 20px 0;
   font-size: 24px;
 }
 .experience button{
@@ -192,6 +253,7 @@ padding: 3px 6px;
   color: #BF7506;
   margin-left: 20%;
   margin-top: 6%;
+  margin-bottom: 3%;
 }
 .blog2{
   box-shadow: 10px 10px rgba(0, 0, 0,0.2);
@@ -228,7 +290,7 @@ margin-left: 30%;
 }
 .blog3 img{
   width: 100%;
-  height: 60%;
+  height: 68%;
 }
 
 .blog4{
@@ -247,26 +309,30 @@ margin-left: 30%;
 }
 .blog4 img{
   width: 100%;
-  /* height: 15%; */
+  height: 68%;
 }
 
 .blogs_list{
   display: grid;
-grid-template-columns: repeat(3,0.4fr);
+grid-template-columns: repeat(3,1fr);
 margin-left: 18%;
 }
  .feedback{
   display: flex;
   justify-content: center;
   margin-right: 40%;
-  margin-top: -5%;
+  margin-top: 5%;
 }
 .feedback i{
-  margin-top: 10px;
+  /* margin-bottom: 10px; */
   font-size: 30px;
   color: #545454;
   margin-left: 20px;
   margin-right: 10px;
+}
+.feedback p{
+  margin-top: 4px;
+  margin-left: 6px;
 }
 
 /* contact */
@@ -306,13 +372,177 @@ margin-left: 32%;
 
 
 /* responsiveness */
+
+@media screen and (min-width:220px) and (max-width:319px) {
+  .hideOnMobile{
+   display: none;
+  }
+  
+  .par1{
+   margin-left: 15%;
+       width: 90%;
+ 
+  }
+   .par1 h2{
+     font-size: 20px;
+   }
+   .par1 p{
+     font-size: 18px;
+   }
+   .icon{
+     width: 100%;
+   }
+   .nav p{
+ font-size: 15px;
+   }
+   .img{
+     display: none;
+   }
+   .cv button{
+     font-size: 14px;
+    }
+    .projects {
+     margin-left: 18%;
+   }
+    .projects h2{
+     font-size: 24px;
+     margin-left: 1%;
+   }
+ 
+   .container2{
+     flex-wrap: wrap;
+     }
+     .image1{
+       margin-bottom: 23%;
+     }
+     .image1 img{
+ width: 94%;
+     }
+     .image1 h3{
+      font-size: 16px;
+     }
+     .image1 p{
+       width: 88%;
+     } 
+     .image2 img{
+       width:94%;
+           }
+           .image2 h3{
+            font-size: 16px;
+           }     
+           .image2 p{
+             width: 88%;
+           } 
+     .about_me{
+       flex-wrap: wrap;
+       margin-top: 20%;
+       margin-left: 18%;
+      }
+      .about_me img{
+       width: 80%;
+       /* height: 360px; */
+       /* margin-left: 3%; */
+      }
+      .about h4{
+       font-size: 18px; 
+       /* margin-left: 6%;  */
+        }
+        .about h2{
+         font-size: 22px;  
+          }
+          .about span p{
+           font-size: 18px;  
+            }
+          .about p{
+           font-size: 15px;  
+           width: 90%;
+          } 
+          .skills{
+           margin-left:10%;
+          }
+          .skills h4{
+           font-size: 16px;
+           margin-left: 10%;
+          }
+          .blogs h2{
+           font-size: 30px;
+           /* margin-left: 10%; */
+          }
+          .experience{
+           margin-left: 10%;
+          }
+          .experience button{
+           margin-top: 6px;
+          }
+       .feedback i{
+         font-size: 24px;
+       }
+        
+       .blogs_list{
+         margin-left: 10px;
+       }
+          .blog2{
+           width: 220px;
+         height: 220px;
+         margin-bottom: 20px;
+         }
+       
+         
+         .blog3{
+          width: 220px;
+          height: 220px;
+         margin-bottom: 20px;
+         }
+         .blog3 img{
+           height: 74%;
+         }
+          
+         .blog4{
+          width: 220px;
+         height: 220px;
+         margin-bottom: 20px;
+         }
+         
+         .contact{
+           margin-top: 10%;
+           margin-left: 19%;
+         }
+         .contact h4{
+           font-size: 24px;
+         }
+         .contact input{
+           width: 76%;
+ padding: 8px;     
+    }
+         .contact textarea{
+           width: 85%;
+           padding: 8px;  
+                 }
+         .contact button{
+           margin-left: 63%;
+         }
+     .blogs_list{
+       display: grid;
+     grid-template-columns: repeat(1,0.4fr);
+     margin-left: 18%;
+     }
+ 
+ }
 @media screen and (min-width:320px) and (max-width:499px) {
+ .hideOnMobile{
+  display: none;
+ }
+ 
+ .par1{
+  margin-left: 15%;
+      width: 72%;
+
+ }
   .par1 h2{
-    font-size: 24px;
+    font-size: 20px;
   }
   .par1 p{
     font-size: 18px;
-    /* width: 100%; */
   }
   .icon{
     width: 100%;
@@ -326,21 +556,45 @@ font-size: 15px;
   .cv button{
     font-size: 14px;
    }
+   .projects {
+    margin-left: 15%;
+  }
+   .projects h2{
+    font-size: 24px;
+    margin-left: 1%;
+  }
+
   .container2{
-    /* display: flex; */
     flex-wrap: wrap;
     }
+    .image1{
+      margin-bottom: 13%;
+    }
+    .image1 img{
+width: 80%;
+    }
+    .image1 p{
+      width: 78%;
+    } 
+    .image2 img{
+      width: 80%;
+          }
+          .image2 p{
+            width: 78%;
+          } 
     .about_me{
       flex-wrap: wrap;
       margin-top: 20%;
-      margin-left: 6%;
+      margin-left: 15%;
      }
      .about_me img{
-      width: 70%;
+      width: 80%;
       height: 360px;
+      /* margin-left: 3%; */
      }
      .about h4{
-      font-size: 18px;  
+      font-size: 18px; 
+      /* margin-left: 6%;  */
        }
        .about h2{
         font-size: 22px;  
@@ -357,61 +611,62 @@ font-size: 15px;
          }
          .skills h4{
           font-size: 20px;
+          margin-left: 10%;
          }
          .blogs h2{
           font-size: 30px;
+          /* margin-left: 10%; */
+         }
+         .experience{
           margin-left: 10%;
          }
-         
+         .experience button{
+          margin-top: 6px;
+         }
       .feedback i{
-        font-size: 17px;
+        font-size: 24px;
       }
-      .feedback p{
-        margin-top: 10px;
-      }
+       
       .blogs_list{
         margin-left: 10px;
       }
          .blog2{
-          width: 200px;
-        height: 220px;
+          width: 250px;
+        height: 240px;
         margin-bottom: 20px;
         }
       
-         /* .blog2 h4{
-          margin-left: 10%;
-        } */
+        
         .blog3{
-          width: 200px;
-        height: 220px;
+          width: 250px;
+          height: 240px;
         margin-bottom: 20px;
         }
         .blog3 img{
-          height: 54%;
+          height: 74%;
         }
-        /* .blog3 h4{
-          margin-left: 10%;
-        } */
+         
         .blog4{
-          width: 200px;
-        height: 220px;
+          width: 250px;
+        height: 240px;
         margin-bottom: 20px;
         }
-        /* .blog4 h4{
-          margin-left: 10%;
-        } */
+        
         .contact{
-          margin-left: 50px;
+          margin-top: 10%;
+          margin-left: 15%;
         }
         .contact h4{
           font-size: 24px;
         }
         .contact input{
-          width: 55%;
-        }
+          width: 70%;
+padding: 8px;     
+   }
         .contact textarea{
-          width: 60%;
-        }
+          width: 85%;
+          padding: 8px;  
+                }
         .contact button{
           margin-left: 63%;
         }
@@ -423,6 +678,10 @@ font-size: 15px;
 
 }
 @media screen and (min-width:500px)  and (max-width:599px){
+ 
+.hide{
+  display: none;
+}
   .img{
     display: none;
   }
@@ -439,7 +698,7 @@ margin-left: 20%;
   font-size: 14px;
  }
  .projects{
-  margin-left: 10%;
+  margin-left: 8%;
  }
  .projects h2{
   font-size: 30px;
@@ -461,11 +720,11 @@ margin-left: 20%;
  }
  .about_me{
   margin-top: 20%;
-  margin-left: 6%;
+  margin-left: 8%;
  }
  .about_me img{
   width: 40%;
-  height: 360px;
+  /* height: 80%; */
  }
  .about h4{
   font-size: 18px;  
@@ -481,7 +740,7 @@ margin-left: 20%;
       width: 90%;
      } 
      .skills{
-      margin-left:6%;
+      margin-left:8%;
      }
      .skills h4{
       font-size: 20px;
@@ -490,43 +749,49 @@ margin-left: 20%;
       font-size: 30px;
       margin-left: 10%;
      }
-     
+  
+  .blogs_list{
+    margin-left: 8%;
+  }
+     .blog2{
+      width: 85%;
+    height: 63%;
+    }
+    .blog2 img{
+      height: 67%;
+    }
+    .blog2 h4 a{
+      font-size: 14px;
+      margin-left: 18px;
+    }
+    .blog3{
+      width: 85%;
+    height: 63%;
+    }
+    .blog3 img{
+      height: 67%;
+    }
+    .blog3 h4 a{
+      font-size: 14px;
+      margin-left: 18px;
+    }
+    .blog4{
+      width: 85%;
+    height: 63%;
+    }
+    .blog4 h4 a{
+      font-size: 14px;
+      margin-left: 18px;
+    }
+       
   .feedback i{
     font-size: 17px;
   }
   .feedback p{
-    margin-top: 10px;
+    margin-top: 1px;
   }
-  .blogs_list{
-    margin-left: 10px;
-  }
-     .blog2{
-      width: 85%;
-    height: 60%;
-    }
-  
-     .blog2 h4{
-      margin-left: 20%;
-    }
-    .blog3{
-      width: 85%;
-    height: 60%;
-    }
-    .blog3 img{
-      height: 54%;
-    }
-    .blog3 h4{
-      margin-left: 10%;
-    }
-    .blog4{
-      width: 85%;
-    height: 60%;
-    }
-    .blog4 h4{
-      margin-left: 10%;
-    }
     .contact{
-      margin-left: 50px;
+      margin-left: 10%;
     }
     .contact h4{
       font-size: 24px;
@@ -535,14 +800,23 @@ margin-left: 20%;
       width: 55%;
     }
     .contact textarea{
-      width: 60%;
+      width: 75%;
     }
     .contact button{
-      margin-left: 63%;
+      margin-left: 65%;
     }
 }
 
 @media screen and (min-width:600px) and (max-width:699px) {
+  .hide{
+    display: none;
+  }
+  .par1 h2{
+    font-size: 24px;
+  }
+  .par1 p{
+    font-size: 18px;
+  }
   .img{
     display: none;
   }
@@ -579,9 +853,7 @@ margin-left: 20%;
   .feedback i{
     font-size: 20px;
   }
-  .feedback p{
-    margin-top: 10px;
-  }
+  
   .blogs_list{
     margin-left: 10px;
   }
@@ -590,28 +862,31 @@ margin-left: 20%;
     height: 60%;
     }
   
-     .blog2 h4{
+     /* .blog2 h4{
       margin-left: 20%;
-    }
+    } */
     .blog3{
       width: 85%;
     height: 60%;
     }
     .blog3 img{
-      height: 54%;
+      height: 62%;
     }
-    .blog3 h4{
+    /* .blog3 h4{
       margin-left: 20%;
-    }
+    } */
     .blog4{
       width: 85%;
     height: 60%;
     }
-    .blog4 h4{
+    /* .blog4 h4{
       margin-left: 20%;
-    }
+    } */
     .contact{
-      margin-left: 50px;
+      margin-left: 16%;
+    }
+    .contact h4{
+      margin-bottom: 20px;
     }
     .contact input{
       width: 55%;
@@ -620,13 +895,21 @@ margin-left: 20%;
       width: 60%;
     }
     .contact button{
-      margin-left: 63%;
+      margin-left: 50%;
     }
 }
 
 @media screen and (min-width:700px) and (max-width:813px) {
+  .hide{
+    display: none;
+  }
+  .par1 p{
+    font-size: 20px;
+    width: 350px;
+  }
   .about_me{
     margin-left: 16%;
+    margin-top: 10%;
    }
   .about_me img{
     width: 40%;
@@ -648,38 +931,48 @@ font-size: 20px;
 .feedback i{
   font-size: 20px;
 }
-.feedback p{
+.feedback {
+  margin-left: 20px;
   margin-top: 10px;
 }
+
    .blog2{
     width: 85%;
   height: 60%;
   }
 
-   .blog2 h4{
-    margin-left: 20%;
-  }
+  
   .blog3{
     width: 85%;
   height: 60%;
   }
   .blog3 img{
-    height: 54%;
+    height: 63%;
   }
-  .blog3 h4{
-    margin-left: 20%;
-  }
+  
   .blog4{
     width: 85%;
   height: 60%;
   }
-  .blog4 h4{
-    margin-left: 20%;
-  }
+  
+  .contact h4{
+    font-size: 28px;
+    }
+    .contact input{
+      width: 60%;
+    }
+    .contact textarea{
+      width: 75%;
+    }
+    .contact button{
+    margin-left: 66%;
+    }
 }
 
 @media screen and (min-width:820px) and (max-width:1240px) {
- 
+  .hide{
+    display: none;
+  }
  .image1 img{
 height: 60%;
  }
@@ -698,23 +991,38 @@ height: 60%;
   width: 85%;
 height: 60%;
 }
-.blog2 h4{
-  margin-left: 20%;
-}
+
 
 .blog3{
   width: 85%;
 height: 60%;
 }
-.blog3 h4{
-  margin-left: 20%;
-}
+
 .blog4{
   width: 85%;
 height: 60%;
 }
-.blog4 h4{
-  margin-left: 20%;
+.about_me{
+  margin-top: 10%;
 }
-
+.about{
+  margin-top: 20px;
+}
+.contact h4{
+font-size: 28px;
+}
+.contact input{
+  width: 50%;
+}
+.contact textarea{
+  width: 55%;
+}
+.contact button{
+margin-left: 46%;
+}
+}
+@media screen and (min-width:1240px) {
+  .hide{
+    display: none;
+  }
 }
