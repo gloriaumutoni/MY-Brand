@@ -38,17 +38,39 @@
             <img src="../images/pexels-photo-731889.jpeg" alt="image">
         <div class="overlay"></div>
         <div class="overlay-content">
+          <form  id='form' action="/">
+
             <h2>SignUp</h2>
-<input type="text" placeholder="username"> <br>
-<input type="text" placeholder="email"><br>
-<input type="password" placeholder="password">   <br>
-<button>SignUp</button>
+
+            <div class="input-control">
+              <input type="text" id="username" placeholder="username" required> 
+              <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <input type="text" id="email" placeholder="email">
+<div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <input type="password" id="password" placeholder="password"> 
+<div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <input type="password" id="password2" placeholder="password again">   
+<div class="error"></div>
+            </div>
+
+<button type="submit">SignUp</button>
+</form>
+
    </div>
         </div>
 <img src="../images/pexels-photo-731889.jpeg" alt="">
     </div>
   </div>  
-
+<script src="./signup.js"></script>
   <script>
     function showSidebar() {
       const sidebar = document.querySelector('.sidebar');

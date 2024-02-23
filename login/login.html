@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+<script  src="./login.js"></script>
+  </head>
 <body>
     <div class="bg">
 
@@ -41,19 +42,40 @@
                 <img src="../images/pexels-photo-731889.jpeg" alt="">
 
             <div class="overlay"></div>
-            
+
             <div class="overlay-content">
-                <h2>SignIn</h2>
-    <input type="text" placeholder="email"><br>
-    <input type="password" placeholder="password">   <br>
-    <button>SignIn</button>
-    <p>Don't have an account?<span><a href="../signup/signup.html">SignUp</a></span></p>
-       </div>
+              <h2>SignIn</h2>
+              <form action="/" method="GET">
+                <div>
+                  <input id="username"
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  required
+                  />
+                </div>
+
+                <div>
+                  <input id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                  />
+              <p id="errorMessage" hidden></p>
+                </div>
+                <button type="submit"><a href="../admindashboard/admin.html">SignIn</a></button>
+            </form>
+
+            <p>Don't have an account?<span><a href="../signup/signup.html">SignUp</a></span></p>
+</div>
        
             </div>
     <img src="../images/pexels-photo-731889.jpeg" alt="image">
         </div>
       </div> 
+<script src="./login.js"></script>
+
       <script>
         function showSidebar() {
           const sidebar = document.querySelector('.sidebar');

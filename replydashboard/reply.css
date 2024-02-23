@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+position: relative;
+}
+.sidebar{
+    width: 20%;
+    background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+min-height: 100vh;
+z-index: 10;
+}
+
+.navv1 {
+    margin-top: 10%;
+    text-align: center;
+}
+.nav{
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: flex-start;
+align-items: flex-start;
+width: 80%;
+margin: 20px auto;
+}
+.nav p{
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.nav p.active{
+    background-color: #BF7506;
+    color: white;
+}
+.nav p a{
+    color: rgb(0, 0, 0);
+}
+.topbar{
+    width: 80%;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.topbar i{
+    font-size: 27px;
+}
+.hamburger{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+}
+.hamburger span{
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 4px;
+}
+.maincontent{
+    width: 80%;
+   min-height: calc(100vh - 80px);
+   margin-left: calc(100% - 80%);
+   margin-top: 12%;
+}
+.maincontent .input-control{
+    margin-left: 23%;
+}
+input{
+    background-color: transparent;
+    border:2px solid #BF7506;
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 8px;
+    }
+    textarea{
+        background-color: transparent;
+        border:2px solid #BF7506;
+        width: 400px;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 12px;
+    }
+    button{
+        border: none;
+        border-bottom: 2px solid #BF7506;
+        margin-left: 56%;
+        margin-top: 1%;
+    }
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .sidebar{
+        display: none;
+        width: 70%;
+        z-index: 50;
+        background-color: white;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .topbar{
+        width: 100%;
+    }
+    .maincontent{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+}

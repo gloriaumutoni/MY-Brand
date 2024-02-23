@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./blog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="navv1">
+                <h2><span>Dash</span>board</h2>
+                <div class="nav">
+                    <p><a href="../admindashboard/admin.html">Home</a></p>
+                    <p class="active">Blog</p>
+                    <p><a href="../addblog/add.html">Add Blog</a></p>
+                    <p><a href="../message dashboard/message.html">Message</a></p>
+                    <p><a href="../replydashboard/reply.html">Reply</a></p>
+                    <p><a href="../index.html">Logout</a></p>
+                </div>
+        </div>
+        </div>
+
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <i class='bx bx-notification'></i>
+                <i class='bx bxs-user-circle' ></i>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="maincontent">
+            <div class="cont">
+
+                <table>
+                    <thead>
+                        <tr>
+                        <th>ID</th>
+                        <th>Photo</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="blogTableBody">
+
+                    </tbody>
+                </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal for viewing user details -->
+<div id="userModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>User Details</h2>
+      <p id="blogDetails"></p>
+    </div>
+  </div>
+  
+  <!-- Form for updating user details -->
+  
+  <form id="updateForm" class="modal">
+    <div class="modal-content">
+    <h2>Update User</h2>
+    <label for="updateTitle">Title:</label>
+    <input type="text" id="updateTitle" name="title" required><br>
+    <img id="updatePicturePreview" src="" alt="Update Picture Preview" style="max-width: 100px; max-height: 100px;">
+    <label for="updatePicture">Picture:</label>
+    <input type="file" id="updatePicture" name="picture"><br>
+    <label for="updateDescription">Description:</label>
+    <textarea id="updateDescription" name="description" rows="4" required></textarea>
+    <button type="submit">Update</button>
+</div>
+
+    <script src="../javascript/sidebar.js"></script>
+    <script src="../javascript/text-editor.js"></script>
+    <script src="../trial/all_blogs.js"></script>
+</body>
+</html>

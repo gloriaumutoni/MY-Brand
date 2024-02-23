@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+text-decoration: none;}
+body{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+position: relative;
+}
+.sidebar{
+    width: 20%;
+    background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+min-height: 100vh;
+z-index: 10;
+}
+
+.navv1 {
+    margin-top: 10%;
+    text-align: center;
+}
+.nav{
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: flex-start;
+align-items: flex-start;
+width: 80%;
+margin: 20px auto;
+}
+.nav p{
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.nav p a{
+    color: rgb(0, 0, 0);
+}
+.nav p.active{
+    background-color: #BF7506;
+    color: white;
+}
+.topbar{
+    width: 80%;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.topbar i{
+    font-size: 27px;
+}
+.hamburger{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+    margin-right: 20px;
+}
+.hamburger span{
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 4px;
+}
+.maincontent{
+    width: 80%;
+   min-height: calc(100vh - 80px);
+   margin-left: calc(100% - 80%);
+   margin-top: 80px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 6%;
+    margin-top: 5%;
+}
+.grid1{
+    width: 80%;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    gap: 8px;
+    box-shadow: 6px 6px #ddddddc4;
+}
+.grid1 i{
+    font-size: 35px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.grid1 .cont1 {
+font-size: 20px;
+padding-top: 16px;
+}
+.grid2{
+    width: 80%;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    gap: 8px;
+    box-shadow: 6px 6px #ddddddc4;
+    margin-left: 12%;
+}
+.grid2 i{
+    font-size: 35px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.grid2 .cont2 {
+font-size: 20px;
+padding-top: 16px;
+}
+.grid3{
+    width: 80%;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    gap: 8px;
+    box-shadow: 6px 6px #ddddddc4;
+    margin-left: 12%;
+
+}
+.grid3 i{
+    font-size: 35px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.grid3 .cont3 {
+font-size: 20px;
+padding-top: 16px;
+}
+.grid4{
+    width: 80%;
+    height: 80px;
+  border-radius: 10px;
+  display: flex;
+  background-color: white;
+  gap: 8px;
+  box-shadow: 6px 6px #ddddddc4;
+  margin-left: 12%;
+
+}
+.grid4 i{
+  font-size: 35px;
+  padding-top: 18px;
+  padding-left: 14px;
+  padding-right: 20px;
+}
+.grid4 .cont4 {
+font-size: 20px;
+padding-top: 16px;
+}
+.line_graph{
+  margin-left: 6%;
+  margin-top: 3%;
+  background-color: white;
+  box-shadow: 6px 6px rgba(197, 197, 197, 0.664);
+  border-radius: 10px;
+  width: 65%;
+}
+
+/* responsiveness */
+
+@media screen and (min-width:260px) and (max-width:499px) {
+    .sidebar{
+        display: none;
+        width: 70%;
+        z-index: 50;
+        background-color: white;
+    }
+    .hamburger{
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+    }
+    .hamburger span{
+        background-color: rgb(0, 0, 0);
+        width: 20px;
+        height: 2px;
+    }
+    .topbar{
+        width: 100%;
+        height: 60px;
+    }
+    .topbar i{
+        font-size: 23px;
+    }
+    .maincontent{
+        margin-left: 0;
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 2%;
+        margin-top: 2%;
+    } 
+     .grid1{
+        width: 70%;
+        height: 60px;
+    }
+     .grid1 i{
+        font-size: 20px;
+        padding-top: 14px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .grid1 .cont1 {
+    font-size: 14px;
+    padding-top: 10px;
+    }
+    .grid2{
+        width: 70%;
+        height: 60px;
+    }
+     .grid2 i{
+        font-size: 20px;
+        padding-top: 14px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .grid2 .cont2 {
+    font-size: 14px;
+    padding-top: 10px;
+    }
+    .grid3{
+        width: 70%;
+        height: 60px;
+        margin-top: 7%;
+        margin-left: 2%;
+    }
+     .grid3 i{
+        font-size: 20px;
+        padding-top: 14px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .grid3 .cont3 {
+    font-size: 14px;
+    padding-top: 10px;
+    }
+    .grid4{
+        width: 70%;
+        height: 60px;
+        margin-top: 7%;
+    }
+     .grid4 i{
+        font-size: 20px;
+        padding-top: 14px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .grid4 .cont4 {
+    font-size: 14px;
+    padding-top: 10px;
+    }
+ .line_graph{
+    margin-left: 10px;
+    width: 95%;
+ }   
+}
+
+@media screen and (min-width:400px) and (max-width:500px) {
+    .sidebar{
+        display: none;
+        width: 70%;
+        z-index: 50;
+        background-color: white;
+    }
+    .hamburger{
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .hamburger span{
+        background-color: rgb(0, 0, 0);
+        width: 20px;
+        height: 2px;
+    }
+    .topbar{
+        width: 100%;
+        height: 60px;
+    }
+    .topbar .hamburger{
+font-size: 23px;
+    }
+    .maincontent{
+        margin-left: 0;
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 2%;
+        margin-top: 2%;
+    }  
+     .grid1 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid1 .cont1 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid2 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid2 .cont2 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid3 {
+        margin-top: 20px;
+        margin-left: 2%;
+        /* margin-right: 6%; */
+     }
+    .grid3 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid3 .cont3 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid4 {
+        margin-top: 20px;
+        margin-left: 2%;
+     }
+    .grid4 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid4 .cont4 {
+    font-size: 18px;
+    padding-top: 16px;
+    } 
+ .line_graph{
+    width: 85%;
+ }   
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    .sidebar{
+        display: none;
+        width: 70%;
+        z-index: 50;
+        background-color: white;
+    }
+    .hamburger{
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .hamburger span{
+        background-color: rgb(0, 0, 0);
+        width: 20px;
+        height: 2px;
+    }
+    .topbar{
+        width: 100%;
+        height: 60px;
+    }
+    .topbar .hamburger{
+font-size: 23px;
+    }
+    .maincontent{
+        margin-left: 0;
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 2%;
+        margin-top: 2%;
+    }  
+     .grid1 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid1 .cont1 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid2 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid2 .cont2 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid3 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid3 .cont3 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid4 {
+        margin-top: 20px;
+        margin-left: 2%;
+     }
+    .grid4 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid4 .cont4 {
+    font-size: 18px;
+    padding-top: 16px;
+    } 
+    
+}
+
+@media screen and (min-width:601px)and (max-width:729px) {
+    
+    .topbar{
+height: 60px;
+    }
+    .topbar i{
+        font-size: 23px;
+    }
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 2%;
+        margin-top: 2%;
+    }  
+     .grid1 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid1 .cont1 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid2 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid2 .cont2 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid3 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid3 .cont3 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid4 {
+        margin-top: 20px;
+        margin-left: 2%;
+     }
+    .grid4 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid4 .cont4 {
+    font-size: 18px;
+    padding-top: 16px;
+    } 
+}
+
+@media screen and (min-width:730px)and (max-width:849px) {
+    
+    .topbar{
+height: 60px;
+    }
+    .topbar i{
+        font-size: 23px;
+    }
+    .grid{
+        margin-left: 2%;
+        margin-top: 5%;
+    }  
+    .grid1 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid1 .cont1 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid2 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid2 .cont2 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid3 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid3 .cont3 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid4 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 8px;
+        padding-right: 14px;
+    }
+    .grid4 .cont4 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+}
+
+@media screen and (min-width:850px)and (max-width:975px) {
+    .grid{
+        margin-left: 2%;
+        margin-top: 5%;
+    }  
+    .grid1 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 12px;
+        padding-right: 18px;
+    }
+    .grid1 .cont1 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid2 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 12px;
+        padding-right: 18px;
+    }
+    .grid2 .cont2 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid3 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 12px;
+        padding-right: 18px;
+    }
+    .grid3 .cont3 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+    .grid4 i{
+        font-size: 30px;
+        padding-top: 18px;
+        padding-left: 12px;
+        padding-right: 18px;
+    }
+    .grid4 .cont4 {
+    font-size: 18px;
+    padding-top: 16px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .grid{
+        margin-left: 2%;
+        margin-top: 5%;
+    }  
+    
+}

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+position: relative;
+}
+.sidebar{
+    width: 20%;
+    background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+min-height: 100vh;
+z-index: 10;
+}
+
+.navv1 {
+    margin-top: 10%;
+    text-align: center;
+}
+.nav{
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: flex-start;
+align-items: flex-start;
+width: 80%;
+margin: 20px auto;
+}
+.nav p{
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.nav p a{
+    color: rgb(0, 0, 0);
+}
+.nav p.active{
+    background-color: #BF7506;
+    color: white;
+}
+.topbar{
+    width: 80%;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.topbar i{
+    font-size: 27px;
+}
+.hamburger{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+}
+.hamburger span{
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 4px;
+}
+.maincontent{
+    width: 80%;
+   min-height: calc(100vh - 80px);
+   margin-left: calc(100% - 80%);
+   margin-top: 80px;
+}
+
+.cont{
+    margin-left: 3%;
+    margin-top: 6%;
+  }
+  .div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+  }
+  .div .names{
+   margin-left: 80px;
+   padding-right: 100px;
+  }
+  .div .names p{
+  padding-top: 20px;
+   }
+   .div .emails{
+    margin-left: 80px;
+    padding-right: 100px;
+   }
+   .div .emails p{
+   padding-top: 20px;
+    }
+    .div .message{
+      margin-left: 80px;
+      padding-right: 100px;
+     }
+     .div .message p{
+     padding-top: 20px;
+     width: 140px;
+      }
+      .div .more{
+        margin-left: 80px;
+        padding-right: 100px;
+       }
+    .icons .reply i{
+       padding-top: 20px;
+       padding-right: 10px;
+       cursor: pointer;
+        }
+        .icons .remove i{
+          padding-top: 20px;
+          cursor: pointer;
+          color: red;
+           }
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 30%;
+  }
+  
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+  /* responsivess */
+
+@media screen and (max-width:600px) {
+    .sidebar{
+        display: none;
+        width: 70%;
+        z-index: 50;
+        background-color: white;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .topbar{
+        width: 100%;
+    }
+    .maincontent{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+}

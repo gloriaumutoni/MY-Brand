@@ -101,16 +101,38 @@ padding-top: 1.2%;
 .overlay-content h2{
     font-size: 35px;
     margin-left: 30%;
-    margin-bottom: 20%;
+    margin-bottom: 6%;
 }
 .overlay-content input{
     padding: 10px 35px;
     width:300px;
-        margin-bottom: 15%;
+        margin-top: 10%;
 background: transparent;
 border: 2px solid #BF7506;
 border-radius: 10px;
 }
+/* .input-control input{
+  padding: 10px 35px;
+  width:300px;
+      margin-top: 10%;
+background: transparent;
+border: 2px solid #BF7506;
+border-radius: 10px;
+}
+.input-control input:focus{
+  outline: 0;
+}
+.input-control.success input{
+  border-color: #BF7506;
+}
+.input-control.error input{
+  border-color: #ff3860;
+}
+.input-control.error{
+color: #ff3860;
+font-size: 9px;
+height: 13px;
+} */
 .overlay-content button{
     margin-top: 10%;
     margin-left: 28%;

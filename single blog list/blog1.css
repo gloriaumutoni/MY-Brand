@@ -195,7 +195,7 @@ padding-top: 1.2%;
  }
   }
   @media screen and (min-width:500px) and (max-width:659px) {
-    .hide{
+    .hideOnMobile{
       display: none;
     }
     .blog1_bg h2{
@@ -233,6 +233,11 @@ padding-top: 1.2%;
  }
   }
   @media screen and (min-width:660px) and (max-width:709px) {
+    .part1 p {
+      float: none;
+      margin-left: 10%;
+      width: 86%;
+    }
     .comments {
       width: 210px;
       height: 50px;
@@ -250,6 +255,7 @@ padding-top: 1.2%;
    .feedback button{
     margin-left: 41%;
    }
+  
   }
 
   @media screen and (min-width:710px) and (max-width:789px) {

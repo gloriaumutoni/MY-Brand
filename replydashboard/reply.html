@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reply.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="navv1">
+            <h2><span>Dash</span>board</h2>
+            <div class="nav">
+                <p><a href="../admindashboard/admin.html">Home</a></p>
+                <p><a href="../blogdashboard/blog.html">Blog</a></p>
+                <p><a href="../message dashboard/message.html">Message</a></p>
+                <p class="active">Reply</p>
+                <p><a href="../index.html">Logout</a></p>
+            </div>
+    </div>
+    </div>
+
+    <!-- topbar -->
+    <div class="topbar">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <i class='bx bx-notification'></i>
+            <i class='bx bxs-user-circle' ></i>
+        </div>
+    </div>
+
+    <!-- maincontent -->
+
+    <div class="maincontent">
+        
+<form  id='form' action="/">
+
+    <div class="input-control">
+      <input type="text" id="username" placeholder="username" required> 
+      <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+      <input type="text" id="email" placeholder="email">
+<div class="error"></div>
+    </div>
+
+    <div class="input-control">
+      <textarea  id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+      <div class="error"></div>
+    </div>
+
+    <button type="submit"><span><i class='bx bxs-send' ></i></span>Send</button><br>
+  </form>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="../script.js"></script>
+    <script src="../javascript/sidebar.js"></script>
+
+</body>
+</html>

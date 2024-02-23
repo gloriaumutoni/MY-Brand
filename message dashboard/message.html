@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./message.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="navv1">
+            <h2><span>Dash</span>board</h2>
+            <div class="nav">
+                <p><a href="../admindashboard/admin.html">Home</a></p>
+                <p><a href="../blogdashboard/blog.html">Blog</a></p>
+                <p class="active">Message</p>
+                <p><a href="../replydashboard/reply.html">Reply</a></p>
+                <p><a href="../index.html">Logout</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- topbar -->
+    <div class="topbar">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <i class='bx bx-notification'></i>
+            <i class='bx bxs-user-circle' ></i>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="maincontent">
+        <div class="cont">
+            <div class="div">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="messageTableBody">
+
+                    </tbody>
+                </table>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="messageModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="messageDetails"></div>
+    </div>
+  </div>
+  
+
+<script src="./message.js"></script>
+    <script src="../javascript/sidebar.js"></script>
+    <script src="./edit.js"></script>
+</body>
+</html>

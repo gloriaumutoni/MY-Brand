@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+
+        <div class="sidebar" id="sidebar">
+            <div class="navv1">
+                <h2><span>Dash</span>board</h2>
+                <div class="nav">
+                    <p class="active">Home</p>
+                    <p><a href="../blogdashboard/blog.html">Blog</a></p>
+                    <p><a href="../message dashboard/message.html">Message</a></p>
+                    <p><a href="../replydashboard/reply.html">Reply</a></p>
+                    <p><a href="../index.html">Logout</a></p>
+                </div>
+        </div>
+        </div>
+
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div>
+                <i class='bx bx-notification'></i>
+                <i class='bx bxs-user-circle' ></i>
+            </div>
+              
+                </div>
+
+        <!-- main Content -->
+        <div class="maincontent">
+            <div class="cont">
+                <div class="grid">
+                    <div class="grid1">
+                        <i class='bx bxs-group'></i>
+                        <div class="cont1">
+                            <p>200</p>
+                            <p>viewers</p>
+                        </div>
+                    </div>
+
+                    <div class="grid2">
+                        <i class='bx bxs-layer'></i>
+                        <div class="cont2">
+                            <p>20</p>
+                            <p>Blogs</p>
+                        </div>
+                    </div>
+
+                    <div class="grid3">
+                        <i class='bx bxs-category'></i>
+                        <div class="cont3">
+                            <p>10</p>
+                            <p>projects</p>
+                        </div>
+                    </div>
+
+                    <div class="grid4">
+                        <i class='bx bxs-book-alt'></i>
+                        <div class="cont4">
+                            <p>12</p>
+                            <p>articles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line_graph">
+                    <h2>User Details</h2>
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/chart.js"></script>
+    <script src="../javascript/sidebar.js"></script>
+</body>
+</html>

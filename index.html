@@ -157,6 +157,7 @@
   <div class="blogs_list">
 
     <!-- <div class="blog1"> -->
+      <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
       <div class="blog2">
   
     <img src="./images/pexels-photo-326502.jpeg" alt="image5">
@@ -197,11 +198,13 @@
         <i class='bx bx-like' ></i>
         </div>
       </div>
-     
+
+      <button class="next" onclick="moveSlider(1)">&#10095;</button>
     <!-- </div> -->
 
   </div>
-
+  
+ 
 </div>
 </section>
 
@@ -210,17 +213,26 @@
 <div class="contact" >
   <h4>I’m ready to talk...</h4>
 
-  <div>
-    <input type="text" placeholder="Name">
-    </div>
-    <div>
-      <input type="text" placeholder="Email">
-    </div>
-    <div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+  <form  id='contactForm' action="/">
 
+    <div class="input-control">
+      <input type="text" id="fullName" placeholder="username" > 
+      <div id="fullNameError" class="error"></div>
     </div>
-  <button><span><i class='bx bxs-send' ></i></span>Send</button>
+
+    <div class="input-control">
+      <input type="text" id="email" placeholder="email">
+<div id="emailError" class="error"></div>
+    </div>
+
+    <div class="input-control">
+      <textarea  id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+      <div id="messageError" class="error"></div>
+    </div>
+
+    <button type="submit"><span><i class='bx bxs-send' ></i></span>Send</button><br>
+  </form>
+
   </div>
 </section>
     
@@ -229,6 +241,8 @@
 
       </div>
 
+      <script src="./trial/contact_me.js"></script>
+<!-- <script src="./script.js"></script> -->
 
 <script>
   function showSidebar() {
@@ -239,6 +253,34 @@ function hideSidebar(){
   const hideSidebar=document.querySelector('.sidebar');
   hideSidebar.style.display='none';
 }
+
+
+// slider
+let slideIndex = 0;
+
+function moveSlider(direction) {
+    const slider = document.querySelector('.blogs_list');
+    const slides = document.querySelectorAll('.blogs_list > div > img');
+    const slideWidth = slides[0].clientWidth;
+
+    if (direction === 1) {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+    } else {
+        slideIndex--;
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+    }
+
+    const offset = -slideIndex * slideWidth;
+    slider.style.transform = `translateX(${offset}px)`;
+}
+
+
+
 </script>
 
 
