@@ -86,98 +86,73 @@ margin: 20px auto;
    margin-top: 80px;
 }
 
+.maincontent {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
 
-
-.cont{
-    display: grid;
-grid-template-columns: repeat(4,1fr);
-margin-top: 6%;
-margin-left: 10%;
-}
-.cont .title{
-    margin-right: 30px;
-    width: 140px;
-}
-.cont .title p{
-    padding-top: 20px;
-}
-.cont .image{
-    margin-right: 30px;
-    width: 140px;
-}
-.cont .image p{
-    padding-top: 20px;
-}
-.cont .content{
-    margin-right: 30px;
+/* Table */
+table {
     width: 100%;
-}
-.cont .content p{
-    padding-top: 20px;
-}
-.cont .more{
-    margin-right: 30px;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
 }
 
-.icons{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 30%;
-}
-.icons .edit i{
-    padding-top: 20px;
-    cursor: pointer;
-    padding-right: 10px;
-}
-.icons .remove i{
-    padding-top: 20px;
-    cursor: pointer;
-    color: red;
+thead {
+    background-color: #f2f2f2;
 }
 
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
 
-
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
 
 /* Modal */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999999; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    max-width: 600px;
+}
 
-  }
-  
-  /* Close Button */
-  .close {
-    color: #aaa;
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
 
 
 
