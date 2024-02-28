@@ -49,6 +49,7 @@
             </defs>
             </svg>              
         </div>
+
         <div class="container1" >
           <section id="section1">
 
@@ -152,30 +153,18 @@
 <!-- blogs -->
 
 <section id="section4">
-<div class="blogs" >
+<div class="blogs" id="wrapper" >
   <h2>Blogs</h2>
-  <div class="blogs_list">
+  <!-- swipper -->
 
-    <!-- <div class="blog1"> -->
-      <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
-      <div class="blog2">
-  
-    <img src="./images/pexels-photo-326502.jpeg" alt="image5">
+  <swiper-container class="mySwiper" navigation="true" id="swiper-container" pagination-clickable="true" space-between="30"
+    slides-per-view="3">
     
-    <h4><a href="./single blog list/blog1.html">UI/UX Design</a></h4>
-  
-<div class="feedback">
-   <p>5</p>  
- <i class='bx bx-conversation'></i>    
-  <p>8</p> 
- <i class='bx bx-like' ></i> 
-</div>
-</div>
-     
-    <!-- </div> -->
+    
 
-    <div class="blog3">
-        <img src="./images/pexels-photo-7818239.jpeg" alt="image6">
+    <!-- <swiper-slide>
+      <div class="blog3">
+        <img src="./images/pexels-christina-morillo-1181271.jpg" alt="image6">
       <h4><a href="./single blog list/blog2.html">New experiences</a></h4>
       <div class="feedback">
         <p>7</p>
@@ -185,8 +174,9 @@
       </div>
       
     </div>
+    </swiper-slide> -->
 
-    <!-- <div class="blog1"> -->
+    <!-- <swiper-slide>
       <div class="blog4">
         <img src="./images/pexels-photo-3861951.webp" alt="image7">
         <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
@@ -198,12 +188,91 @@
         <i class='bx bx-like' ></i>
         </div>
       </div>
+    </swiper-slide> -->
 
-      <button class="next" onclick="moveSlider(1)">&#10095;</button>
-    <!-- </div> -->
+    <!-- <swiper-slide>
+      <div class="blog4">
+        <img src="./images/pexels-photo-326502.jpeg" alt="image7">
+        <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
 
-  </div>
-  
+        <div class="feedback">
+          <p>5</p>
+          <i class='bx bx-conversation'></i>
+        <p>8</p>
+        <i class='bx bx-like' ></i>
+        </div>
+      </div>
+    </swiper-slide> -->
+
+    <!-- <swiper-slide>
+      <div class="blog4">
+        <img src="./images/pexels-photo-3861951.webp" alt="image7">
+        <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
+
+        <div class="feedback">
+          <p>5</p>
+          <i class='bx bx-conversation'></i>
+        <p>8</p>
+        <i class='bx bx-like' ></i>
+        </div>
+      </div>
+    </swiper-slide> -->
+
+    <!-- <swiper-slide>
+      <div class="blog4">
+        <img src="./images/pexels-christina-morillo-1181271.jpg" alt="image7">
+        <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
+
+        <div class="feedback">
+          <p>5</p>
+          <i class='bx bx-conversation'></i>
+        <p>8</p>
+        <i class='bx bx-like' ></i>
+        </div>
+      </div>
+    </swiper-slide> -->
+
+    <!-- <swiper-slide>
+      <div class="blog4">
+        <img src="./images/pexels-photo-3861951.webp" alt="image7">
+        <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
+
+        <div class="feedback">
+          <p>5</p>
+          <i class='bx bx-conversation'></i>
+        <p>8</p>
+        <i class='bx bx-like' ></i>
+        </div>
+      </div>
+    </swiper-slide> -->
+
+    <!-- <swiper-slide>     <div class="blog4">
+        <img src="./images/pexels-photo-3861951.webp" alt="image7">
+        <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
+
+        <div class="feedback">
+          <p>5</p>
+          <i class='bx bx-conversation'></i>
+        <p>8</p>
+        <i class='bx bx-like' ></i>
+        </div>
+      </div>
+    </swiper-slide> -->
+
+    <!-- <swiper-slide>
+      <div class="blog4">
+        <img src="./images/pexels-photo-3861951.webp" alt="image7">
+        <h4><a href="./single blog list/blog3.html">Coding as a girl</a></h4>
+
+        <div class="feedback">
+          <p>5</p>
+          <i class='bx bx-conversation'></i>
+        <p>8</p>
+        <i class='bx bx-like' ></i>
+        </div>
+      </div>
+    </swiper-slide> -->
+  </swiper-container>
  
 </div>
 </section>
@@ -230,7 +299,7 @@
       <div id="messageError" class="error"></div>
     </div>
 
-    <button type="submit"><span><i class='bx bxs-send' ></i></span>Send</button><br>
+    <button type="submit"><span><i class='bx bxs-send'></i></span>Send</button><br>
   </form>
 
   </div>
@@ -241,8 +310,11 @@
 
       </div>
 
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
       <script src="./trial/contact_me.js"></script>
-<!-- <script src="./script.js"></script> -->
+
+<script src="./script.js"></script>
+<script src="./second-Script.js"></script>
 
 <script>
   function showSidebar() {
@@ -253,32 +325,6 @@ function hideSidebar(){
   const hideSidebar=document.querySelector('.sidebar');
   hideSidebar.style.display='none';
 }
-
-
-// slider
-let slideIndex = 0;
-
-function moveSlider(direction) {
-    const slider = document.querySelector('.blogs_list');
-    const slides = document.querySelectorAll('.blogs_list > div > img');
-    const slideWidth = slides[0].clientWidth;
-
-    if (direction === 1) {
-        slideIndex++;
-        if (slideIndex >= slides.length) {
-            slideIndex = 0;
-        }
-    } else {
-        slideIndex--;
-        if (slideIndex < 0) {
-            slideIndex = slides.length - 1;
-        }
-    }
-
-    const offset = -slideIndex * slideWidth;
-    slider.style.transform = `translateX(${offset}px)`;
-}
-
 
 
 </script>

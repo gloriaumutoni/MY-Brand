@@ -77,31 +77,26 @@ function openUpdateForm(index) {
 // Function to handle form submission for updating user details
 document.getElementById('updateForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    const updateTitle = document.getElementById('updateTitle').value;
-    // Instead of directly getting the value of the file input, get the file itself
+    const updateTitle = document.getElementById('updateTitle').value.trim(); // Trim extra spaces
     const updatePicture = document.getElementById('updatePicture').files[0];
     const updateDescription = document.getElementById('updateDescription').value;
 
-    // Retrieve stored user data
     let userData = retrieveUserData();
     // Find the index of the user to be updated
-    const index = userData.findIndex(user => user.title === updateTitle);
-    // Update user details if found
+    const index = userData.findIndex(user => user.title.trim().toLowerCase() === updateTitle.trim().toLowerCase()); // Case-insensitive comparison
+
     if (index !== -1) {
-        // Update user details including the picture data
-        userData[index].picture = URL.createObjectURL(updatePicture); // Assuming 'updatePicture' contains the file data
+        userData[index].picture = URL.createObjectURL(updatePicture);
         userData[index].description = updateDescription;
 
-        // Store updated user data back to localStorage
         localStorage.setItem('blogs', JSON.stringify(userData));
-        // Close the update form
         document.getElementById('updateForm').style.display = "none";
-        // Refresh the table to reflect the changes
         displayUserDataInTable();
     } else {
-        alert("User not found!"); // Show an alert if user not found
+        alert("User not found!");
     }
 });
+
 
 
 // Function to delete user

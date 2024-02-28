@@ -16,7 +16,7 @@
                 <h2><span>Dash</span>board</h2>
                 <div class="nav">
                     <p><a href="../admindashboard/admin.html">Home</a></p>
-                    <p><a href="../blogdashboard/blog.html">Blog</a></p>
+                    <p><a href="../blogdashboard/blog.html">Blogs</a></p>
                     <p  class="active">Add Blog</p>
                     <p><a href="../message dashboard/message.html">Message</a></p>
                     <p><a href="../replydashboard/reply.html">Reply</a></p>
@@ -42,7 +42,7 @@
         <div class="maincontent">
 
             <div class="cont">
-                <form id="myform" action="">
+                <form id="myform" onsubmit="validateForm(); return false;">
                 <input class="input" type="text" id="title" placeholder="Title">
                 <div class="error" id="texterror"></div>
                 <div>
@@ -106,7 +106,7 @@
                     </div>
                    
                     <div>                     
-                        <input type="submit" onClick="validateForm()" value="Save" class="button2">
+                        <input type="submit" value="Save" class="button2">
                         </div>
                     </form>
                 </div>

@@ -3,6 +3,8 @@ const realFileBtn = document.getElementById("real-file");
 const customBtn = document.getElementById("custom-button");
 const customTxt = document.getElementById("custom-text");
 
+const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
+
 customBtn.addEventListener("click", function() {
     realFileBtn.click();
 });
@@ -93,6 +95,9 @@ window.addEventListener('load', () => {
     textarea.value = "";
 });
 
+
+
+
 // adding blogs
 
 function validateForm() {
@@ -129,24 +134,19 @@ function validateForm() {
         var reader = new FileReader();
         reader.onload = function(event) {
             // Create object to store data
-            var blogs = {
+            const newBlog = {
                 title: title,
                 picture: event.target.result, // Store picture as base64 string
-                description: description
+                description: description,
+                comments:[],
             };
 
             // Check if data already exists in localStorage
-            var storedData = localStorage.getItem("blogs");
-            var dataArray = [];
-            if (storedData) {
-                dataArray = JSON.parse(storedData);
-            }
-
-            // Add new data to array
-            dataArray.push(blogs);
-
+           
+            blogs.push(newBlog);
+            
             // Store data in localStorage
-            localStorage.setItem("blogs", JSON.stringify(dataArray));
+            localStorage.setItem("blogs", JSON.stringify(blogs));
 
             // Reset form
             document.getElementById("myform").reset();

@@ -126,6 +126,12 @@ margin-top: 10px;
     color: #BF7506;
     cursor: pointer;
 }
+#user-error{
+color: red;
+/* font: 10px; */
+}
+
+
 
 /* responsiveness */
 @media screen and (min-width:200px) and (max-width:299px) {

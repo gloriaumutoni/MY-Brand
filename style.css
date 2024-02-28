@@ -247,6 +247,9 @@ padding: 3px 6px;
 }
 
 /* blogs */
+.blogs{
+  margin-bottom: 14%;
+}
 .blogs h2{
   font-weight: bold;
   font-size: 35px;
@@ -264,7 +267,7 @@ cursor: pointer;
 .blog2 h4 a {
   color: black;
   text-decoration: none;
-  margin-left: 30%;
+  /* margin-left: 20px; */
 }
 .blog2 .feedback{
 margin-left: 30%;
@@ -282,7 +285,7 @@ cursor: pointer;
 .blog3 h4 a{
   color: #0f0f0f;
   text-decoration: none;
-  margin-left: 30%;
+  /* margin-left: 30%; */
 }
 .blog3 .feedback{
 margin-left: 30%;
@@ -299,7 +302,7 @@ height: 55%;
 cursor: pointer;
 }
 .blog4 h4 a{
-  margin-left: 30%;
+  /* margin-left: 30%; */
   text-decoration: none;
   color: #0f0f0f;
 }
@@ -356,6 +359,13 @@ margin-left: 18%;
     margin-top: 7%;
 
 }
+#wrapper{
+  max-width: 1200px;
+}
+#carousel > div{
+  width: calc(100 / 3);
+  /* height: 340px; */
+}
 
 /* contact */
 .contact h4{
@@ -399,6 +409,31 @@ margin-left: 32%;
 #submit-error{
   color: red;
 }
+.error{
+  color: red;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6%;
+}
+
+swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+swiper-container{
+  margin-left: 16%;
+}
+
+
+
 
 
 
@@ -508,6 +543,9 @@ margin-left: 32%;
        .blogs_list{
          margin-left: 10px;
        }
+       swiper-container{
+        margin-left: 10px;
+      }
           .blog2{
            width: 220px;
          height: 220px;
@@ -529,7 +567,9 @@ margin-left: 32%;
          height: 220px;
          margin-bottom: 20px;
          }
-         
+         #carousel > div{
+          width: calc(100 / 1);
+        }
          .contact{
            margin-top: 10%;
            margin-left: 19%;
@@ -654,6 +694,9 @@ width: 80%;
       .blogs_list{
         margin-left: 10px;
       }
+      swiper-container{
+        margin-left: 10px;
+      }
          .blog2{
           width: 250px;
         height: 240px;
@@ -675,7 +718,9 @@ width: 80%;
         height: 240px;
         margin-bottom: 20px;
         }
-        
+        #carousel > div{
+          width: calc(100 / 2);
+        }
         .contact{
           margin-top: 10%;
           margin-left: 15%;
@@ -776,6 +821,9 @@ margin-left: 20%;
   
   .blogs_list{
     margin-left: 8%;
+  }
+  swiper-container{
+    margin-left: 7%;
   }
      .blog2{
       width: 85%;
@@ -881,14 +929,14 @@ margin-left: 20%;
   .blogs_list{
     margin-left: 10px;
   }
+  swiper-container{
+    margin-left: 3%;
+  }
      .blog2{
       width: 85%;
     height: 60%;
     }
   
-     /* .blog2 h4{
-      margin-left: 20%;
-    } */
     .blog3{
       width: 85%;
     height: 60%;
@@ -896,9 +944,7 @@ margin-left: 20%;
     .blog3 img{
       height: 62%;
     }
-    /* .blog3 h4{
-      margin-left: 20%;
-    } */
+  
     .blog4{
       width: 85%;
     height: 60%;
@@ -955,6 +1001,9 @@ font-size: 20px;
 .feedback {
   margin-left: 20px;
   margin-top: 10px;
+}
+swiper-container{
+  margin-left: 7%;
 }
 
    .blog2{
